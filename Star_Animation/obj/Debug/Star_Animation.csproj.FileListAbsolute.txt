@@ -1,0 +1,16 @@
+C:\Users\eliah\source\repos\Star_Animation\Star_Animation\bin\Debug\Star_Animation.exe.config
+C:\Users\eliah\source\repos\Star_Animation\Star_Animation\bin\Debug\Star_Animation.exe
+C:\Users\eliah\source\repos\Star_Animation\Star_Animation\bin\Debug\Star_Animation.pdb
+C:\Users\eliah\source\repos\Star_Animation\Star_Animation\obj\Debug\Star_Animation.csproj.AssemblyReference.cache
+C:\Users\eliah\source\repos\Star_Animation\Star_Animation\obj\Debug\Star_Animation.csproj.SuggestedBindingRedirects.cache
+C:\Users\eliah\source\repos\Star_Animation\Star_Animation\obj\Debug\MainWindow.g.cs
+C:\Users\eliah\source\repos\Star_Animation\Star_Animation\obj\Debug\App.g.cs
+C:\Users\eliah\source\repos\Star_Animation\Star_Animation\obj\Debug\Star_Animation_MarkupCompile.cache
+C:\Users\eliah\source\repos\Star_Animation\Star_Animation\obj\Debug\Star_Animation_MarkupCompile.lref
+C:\Users\eliah\source\repos\Star_Animation\Star_Animation\obj\Debug\MainWindow.baml
+C:\Users\eliah\source\repos\Star_Animation\Star_Animation\obj\Debug\Star_Animation.g.resources
+C:\Users\eliah\source\repos\Star_Animation\Star_Animation\obj\Debug\Star_Animation.Properties.Resources.resources
+C:\Users\eliah\source\repos\Star_Animation\Star_Animation\obj\Debug\Star_Animation.csproj.GenerateResource.cache
+C:\Users\eliah\source\repos\Star_Animation\Star_Animation\obj\Debug\Star_Animation.csproj.CoreCompileInputs.cache
+C:\Users\eliah\source\repos\Star_Animation\Star_Animation\obj\Debug\Star_Animation.exe
+C:\Users\eliah\source\repos\Star_Animation\Star_Animation\obj\Debug\Star_Animation.pdb
