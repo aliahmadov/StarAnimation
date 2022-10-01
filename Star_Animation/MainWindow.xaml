@@ -6,58 +6,38 @@
         xmlns:local="clr-namespace:Star_Animation"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Window.Resources>
-        <Style x:Key="myStyle" TargetType="Path">
-            <Style.Resources>
-                
-            </Style.Resources>
-        </Style>
-    </Window.Resources>
     <StackPanel Orientation="Horizontal" >
-        <ToggleButton x:Name="toggle_button" Margin="10" Height="225" Width="250" BorderThickness="0" Background="Transparent"
+        <Button Margin="10" Height="225" Width="250" BorderThickness="0" Background="Transparent"
                 RenderTransformOrigin="0.5,0.5">
-            <Path Name="starPath"  StrokeThickness="1" Stroke="Black" 
+            <Path Name="starPath" Fill="Transparent" StrokeThickness="1" Stroke="Black" 
                   Stretch="Fill" Margin="2"
           Data="M 127,37 L 104,105 L 34,105 L 91,150 L 69,218 L 127,176 L 187,218 L 164,150 L 223,105 L 151,105 L 127,37">
-                <Path.Fill>
-                    <SolidColorBrush Color="Transparent"></SolidColorBrush>
-                </Path.Fill>
-               
             </Path>
-            <ToggleButton.RenderTransform>
+            <Button.RenderTransform>
                 <RotateTransform x:Name="myTransform"></RotateTransform>
-            </ToggleButton.RenderTransform>
-  
-            <ToggleButton.Style>
-                <Style TargetType="{x:Type ToggleButton}">
-                    <Style.Resources>
-                        <Storyboard x:Key="OnVisibleStoryBoard">
-                            <DoubleAnimation To="360" Duration="0:0:1" 
-                                             Storyboard.TargetProperty="RenderTransform.Angle">
+            </Button.RenderTransform>
+            <Button.Triggers>
+                <EventTrigger RoutedEvent="Button.Click">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation Storyboard.TargetName="myTransform"
+                                             Storyboard.TargetProperty="(RotateTransform.Angle)"
+                                             From="0.0" To="360" Duration="0:0:1"
+                                             >
                             </DoubleAnimation>
+                            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Fill).(SolidColorBrush.Color)"
+                                                          Storyboard.TargetName="starPath">
+                                <LinearColorKeyFrame KeyTime="0:0:0.5"
+                                                 Value="Yellow"/>
+                            </ColorAnimationUsingKeyFrames>
+
                         </Storyboard>
-                    </Style.Resources>
-                   
-                    <Style.Triggers>
-                        <Trigger Property="ToggleButton.IsChecked" Value="True">
-                            <Trigger.EnterActions>
-                                <BeginStoryboard Storyboard="{StaticResource OnVisibleStoryBoard}"></BeginStoryboard>
-                            </Trigger.EnterActions>
-                            <Trigger.ExitActions>
-                                <BeginStoryboard>
-                                    <Storyboard TargetProperty="RenderTransform.Angle">
-                                        <DoubleAnimation To="0" Duration="0:0:1" />
-                                    
+                    </BeginStoryboard>
 
-                                    </Storyboard>
-                                </BeginStoryboard>
-                            </Trigger.ExitActions>
-                        </Trigger>
-                    </Style.Triggers>
-                </Style>
-            </ToggleButton.Style>
+                </EventTrigger>
+            </Button.Triggers>
 
-        </ToggleButton>
+        </Button>
     </StackPanel>
 
 
